@@ -146,10 +146,6 @@ sudo dnf install nodejs npm
 3. Make your changes
 4. Submit a pull request
 
-## License 📄
-
-MIT License - see [LICENSE](LICENSE) file.
-
 ## Author
 
 **HOOMAAN** - [hoomaanfelfeli@gmail.com](mailto:hoomaanfelfeli@gmail.com)
