@@ -1,6 +1,5 @@
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
-const { spawn } = require("child_process");
 
 let mainWindow;
 
@@ -21,19 +20,9 @@ function createWindow() {
   });
 
   const indexPath = path.join(__dirname, ".output/public/index.html");
+  console.log("Loading index file:", indexPath);
 
-  if (process.env.NODE_ENV === "development") {
-    spawn("npm", ["run", "dev"], { stdio: "inherit" });
-    setTimeout(() => {
-      mainWindow.loadURL("http://localhost:3000");
-    }, 3000);
-  } else {
-    mainWindow.loadFile(indexPath);
-  }
-
-  if (process.env.NODE_ENV === "development") {
-    mainWindow.webContents.openDevTools();
-  }
+  mainWindow.loadFile(indexPath);
 }
 
 app.whenReady().then(() => {
