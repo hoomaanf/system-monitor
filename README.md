@@ -2,7 +2,7 @@
 
 A beautiful, real-time system monitoring application for Linux built with Vue 3, Nuxt 3, and Electron.
 
-![System Monitor Screenshot](assets/screenshot.png)
+![System Monitor Screenshot](app/assets/screenshot.png)
 
 ## Features ✨
 
@@ -16,7 +16,7 @@ A beautiful, real-time system monitoring application for Linux built with Vue 3,
 
 ## Screenshot 📸
 
-![Dashboard](assets/screenshot.png)
+![Dashboard](app/assets/screenshot.png)
 
 ## Quick Start 🚀
 
